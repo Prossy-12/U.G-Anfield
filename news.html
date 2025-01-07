@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG Anfield - News</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="news.css"> <!-- Custom styles if you have -->
+</head>
+   <button id="scrollToTopBtn" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000; background-color: #f00; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+    ↑ Top
+    </button>
+<body>
+    <!-- Navbar -->
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+          <div class="container d-flex align-items-center">
+            <!-- Logo positioned before the text -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img src="images/WhatsApp Image 2024-10-25 at 12.46.37 PM.jpeg" alt="UG Anfield Logo" class="logo me-2" style="height: 40px; width: auto; position: absolute; left: 90px; top: 10px;">
+              
+            </a>
+                 
+            <a class="navbar-brand" href="index.html">UG Anfield</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+               
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link active" href="news.html">News & Updates</a></li>
+              <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+              <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+              <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link active" href="matches.html">Matches</a></li> <!-- Active link for Matches -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- News Section -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Latest News and Updates</h1>
+            <div class="row">
+
+                <!-- News Article 1: Liverpool's Latest Victory -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/WhatsApp Image 2024-11-18 at 11.32.40_22383707.jpg" class="card-img-top" alt="Liverpool's Latest Victory">
+                        <div class="card-body">
+                            <h5 class="card-title">Liverpool's Latest Victory</h5>
+                            <p class="card-text">Liverpool's recent 2-1 win against Chelsea saw them regain the top spot in the Premier League. Mohamed Salah scored a penalty and assisted Curtis Jones for the decisive goal.</p>
+                            <a href="https://www.skysports.com/liverpool-results" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Article 2: Transfer Rumors: Who's Next? -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/WhatsApp Image 2024-11-18 at 11.32.02_e22f0e31.jpg" class="card-img-top" alt="Transfer Rumors">
+                        <div class="card-body">
+                            <h5 class="card-title">Transfer Rumors: Who's Next?</h5>
+                            <p class="card-text">Liverpool is eyeing young talent Arda Güler from Real Madrid to strengthen their midfield. The club is also exploring defensive reinforcements.</p>
+                            <a href="https://www.skysports.com/football/transfer-news" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Article 3: Upcoming Fixtures and Previews -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/WhatsApp Image 2024-11-18 at 11.41.55_04e653ee.jpg" class="card-img-top" alt="Upcoming Fixtures">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming Fixtures and Previews</h5>
+                            <p class="card-text">Liverpool faces key matches, including a Champions League clash against RB Leipzig and a Premier League showdown with Arsenal.</p>
+                            <a href="https://www.liverpoolfc.com/fixtures/mens/2024" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <!-- News Article 4: Fan Stories: Ugandan Reds in Action -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/WhatsApp Image 2024-11-18 at 11.30.57_ed16176f.jpg" class="card-img-top" alt="Ugandan Reds">
+                        <div class="card-body">
+                            <h5 class="card-title">Fan Stories: Ugandan Reds in Action</h5>
+                            <p class="card-text">A spotlight on Ugandan Liverpool fans and their passionate support for the team.</p>
+                            <a href="ugandan-reds.html" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Article 5: Post-Match Interviews -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/coc.jpg" class="card-img-top" alt="Post-Match Interviews">
+                        <div class="card-body">
+                            <h5 class="card-title">Post-Match Interviews</h5>
+                            <p class="card-text">Catch interviews with manager Jürgen Klopp and key Liverpool players following their recent victories.</p>
+                            <a href="https://www.youtube.com/live/e0GQGGjUfW4?si=S3J0zGl_GbM4OVZt" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Article 6: Upcoming Ug Anfield Events -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="images/fans.jpg" class="card-img-top" alt="Upcoming Events">
+                        <div class="card-body">
+                            <h5 class="card-title">Upcoming Ug Anfield Events</h5>
+                            <p class="card-text">Join us for upcoming events and watch parties for Liverpool fans in Uganda. Don't miss out!</p>
+                            <a href="ug-anfield-events.html" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>Contact: info@uganfield.com | Follow us: 
+                <a href=" https://tiktok.com/@ug.anfield.official" class="text-white">Tiktok</a>, 
+                <a href="https://chat.whatsapp.com/IwDs17g4SsQ7MjDrHupncl" class="text-white">WhatsApp</a>
+                <a href="https://www.instagram.com/uganfield?igsh=ZGUzMzM3NWJiOQ==" class="text-white">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61566677184223" class="text-white">Facebook</a>
+            </p>  
+            <p>&copy; 2024 Ug Anfield. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

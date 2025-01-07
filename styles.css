@@ -1,0 +1,48 @@
+/* Custom styles for Ug Anfield */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Set a dark background to remove white */
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* This pushes the footer to the bottom of the page */
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00; /* A yellow hover effect for the Ugandan flag's color */
+}
+
+footer {
+    font-size: 0.9rem;
+}

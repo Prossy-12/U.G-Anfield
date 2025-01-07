@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG Anfield Events</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="about.css">
+    <style>
+        .card {
+            max-width: 400px; /* Limit width of the card */
+            margin: 20px auto; /* Center cards horizontally */
+        }
+        .card img {
+            width: 100%; /* Make image responsive */
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensure image covers the space without distortion */
+        }
+        .events-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between cards */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Navbar Branding -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/WhatsApp Image 2024-10-25 at 12.46.37 PM.jpeg" alt="UG Anfield Logo" class="me-2" style="height: 40px; width: auto;">
+                <span>UG Anfield</span>
+            </a>
+            <!-- Navbar Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Menu Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News & Updates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matches.html">Matches</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner text-center text-white d-flex justify-content-center align-items-center" style="background-image: url('images/events-hero.jpg'); background-size: cover; height: 50vh;">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+            <h1>UG Anfield Events</h1>
+            <p>Join us in celebrating Liverpool FC together with the UG Anfield family! Stay tuned for our exciting events.</p>
+        </div>
+    </section>
+
+    <!-- Events Content Section -->
+    <div class="container my-5">
+        <h3>Upcoming Events</h3>
+        <div class="events-container">
+            <!-- Event 1 -->
+            <div class="card">
+                <img src="images/ugaf.jpg" alt="Event 1 Image">
+                <div class="card-body">
+                    <h1 class="card-title">End of Year Party (UG-Anfield)</h1>
+                    <p class="card-text">It's all about enjoying with all Liverpool fans (UG.Anfield)</p>
+                    <p><strong>Date:</strong> December 15, 2024</p>
+                    <p><strong>Location:</strong> White Sand Beach, Entebbe</p>
+                    <a href="#" class="btn btn-primary">More Details</a>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="card">
+                <img src="images/event2.jpg" alt="Event 2 Image">
+                <div class="card-body">
+                    <h1 class="card-title">Fan Meetup: Liverpool FC & Beyond</h1>
+                    <p class="card-text">A casual fan meetup to talk about all things Liverpool FC, plus meet new fans from the UG Anfield community!</p>
+                    <p><strong>Date:</strong> December 5, 2024</p>
+                    <p><strong>Location:</strong> Kampala Central Park</p>
+                    <a href="#" class="btn btn-primary">More Details</a>
+                </div>
+            </div>
+        </div>
+
+        <h3>Past Events</h3>
+        <div class="events-container">
+            <!-- Event 1 -->
+            <div class="card">
+                <img src="images/UgA goat.jpg" alt="Event 3 Image">
+                <div class="card-body">
+                    <h1 class="card-title">Liverpool UG.Anfeild fans visiting masaka</h1>
+                    <p class="card-text">lt was such a good time and they also had a match with the pipo from there where memebers of UG.Anfeild won a goat</p>
+                    <p><strong>Date:</strong> October 15, 2024</p>
+                    <p><strong>Location:</strong> Masaka</p>
+                    <a href="#" class="btn btn-secondary">View Recap</a>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="card">
+                <img src="images/UgA red.jpg" alt="Event 4 Image">
+                <div class="card-body">
+                    <h1 class="card-title">UG.Anfield Members Touring </h1>
+                    <p class="card-text">lt was enjoyment only in jinja </p>
+                    <p><strong>Date:</strong> September 28, 2024</p>
+                    <p><strong>Location:</strong> jinja</p>
+                    <a href="#" class="btn btn-secondary">View Recap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>Contact us at: <a href="mailto:info@uganfield.com" class="text-white">info@uganfield.com</a> | Follow us on: 
+                <a href="#" class="text-white">Facebook</a>, 
+                <a href="#" class="text-white">Twitter</a>
+            </p>
+            <p>&copy; 2024 UG Anfield. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

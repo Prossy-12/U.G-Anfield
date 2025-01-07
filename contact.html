@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG Anfield - Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css"> <!-- Custom styles -->
+</head>
+
+   <button id="scrollToTopBtn" onclick="scrollToTop()" style="display: none; position: fixed; bottom: 30px; right: 30px; z-index: 1000; background-color: #f00; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+    ↑ Top
+   </button>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="container d-flex align-items-center">
+                    <!-- Logo positioned before the text -->
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                      <img src="images/WhatsApp Image 2024-10-25 at 12.46.37 PM.jpeg" alt="UG Anfield Logo" class="logo me-2" style="height: 40px; width: auto; position: absolute; left: 90px; top: 10px;">
+                     
+                    </a>
+                    
+                <a class="navbar-brand" href="index.html">UG Anfield</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News & Updates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+                        <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li> <!-- Active link for Contact -->
+                        <li class="nav-item"><a class="nav-link" href="matches.html">Matches</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Contact Us</h1>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>Contact: info@uganfield.com | Follow us: 
+                <a href=" https://tiktok.com/@ug.anfield.official" class="text-white">Tiktok</a>, 
+                <a href="https://chat.whatsapp.com/IwDs17g4SsQ7MjDrHupncl" class="text-white">WhatsApp</a>
+                <a href="https://www.instagram.com/uganfield?igsh=ZGUzMzM3NWJiOQ==" class="text-white">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61566677184223" class="text-white">Facebook</a>
+            </p>
+            <p>&copy; 2024 UG Anfield. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+<script src="contact.js"></script>
+
+</body>
+</html>
