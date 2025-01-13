@@ -30,10 +30,5 @@ window.addEventListener("scroll", function () {
     });
   });
   
-  // Welcome Popup
-  window.onload = function () {
-    setTimeout(() => {
-      alert("Welcome to UG Anfield's About Us page! Learn more about our vision, mission, and core values.");
-    }, 800);
-  };
+  
   
