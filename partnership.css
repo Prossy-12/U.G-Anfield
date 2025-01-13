@@ -1,18 +1,26 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
     color: #212529;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
+    position: relative;
 }
 
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 20px;
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/wwliv.webp'); /* Ensure this path is correct */
+    background-size: cover; /* Adjust size of watermark as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; /* Adjust opacity to make it look like a watermark */
+    z-index: -1; /* Keeps watermark behind all content */
+    pointer-events: none; /* Ensures watermark does not interfere with user interaction */
 }
-
 /* Navbar Styles */
 .navbar {
     background-color: #343a40;
@@ -20,14 +28,10 @@ body {
 
 .navbar-brand {
     font-size: 1.5rem;
-    color: #fff;
+    color: red
+   
 }
 
-.navbar-brand .logo {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
 
 .navbar-nav .nav-link {
     color: #ddd;
@@ -37,12 +41,11 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #fff;
+    color:red;
 }
 
 .navbar-nav .nav-link.active {
-    font-weight: bold;
-    color: #ffc107;
+    color: red
 }
 
 /* Content Styles */
@@ -54,38 +57,45 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-top: 30px;
-    color: #495057;
+    color:red;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 p {
     font-size: 1rem;
     line-height: 1.6;
     color: #495057;
+    margin-bottom: 1rem;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text color */
+    font-size: 0.9rem;
+    padding: 1.5rem 0;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    width: 100%;
+    margin-top: auto; 
 }
 
 footer a {
-    color: #ffc107;
-    margin: 0 5px;
+    color: white; /* Set link color to white */
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease;
+    margin-left: 0.5rem;
+    font-weight: bold;
 }
 
 footer a:hover {
-    color: #fff;
+    text-decoration: underline;
+    color: red; /* Change link color on hover */
 }
 
 footer p {
-    margin: 5px 0;
-    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: white; 
 }
