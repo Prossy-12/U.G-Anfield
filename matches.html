@@ -3,137 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UG Anfield Media</title>
+    <title>Liverpool Matches - UG Anfield</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="media.css"> <!-- Custom styles -->
+    <link rel="stylesheet" href="matches.css"> <!-- Custom styles -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
         .hero-section {
-            background-color: #212529;
-            color: white;
-            padding: 50px 0;
-            text-align: center;
-        }
-        .gallery-title {
-            margin: 30px 0;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #333;
-        }
-        .media-grid img {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .media-grid img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: #c70000; /* Deep red */
+            color:black;
         }
         .btn-filter {
-            margin: 10px;
+            margin: 0 5px;
         }
-        .media-item {
-            display: none; 
-        }
-        .media-item[data-category="all"],
-        .media-item[data-category="photos"],
-        .media-item[data-category="videos"],
-        .media-item[data-category="highlights"] {
-            display: block;
+        .card-header {
+            font-weight: bold;
         }
         .footer {
-            background-color: #212529;
-            color: white;
-            padding: 20px 0;
+            background-color: #333;
+            color: #bbb;
         }
         .footer a {
-            color: #f8d7da;
+            color: #bbb;
             text-decoration: none;
+        }
+        .footer a:hover {
+            color: black;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 shadow-sm">
         <div class="container">
-            <div class="container d-flex align-items-center">
-                <!-- Logo positioned before the text -->
-                
-                    <img src="images/WhatsApp Image 2024-10-25 at 12.46.37 PM.jpeg" alt="UG Anfield Logo" class="logo me-2" style="height: 40px; width: auto; position: absolute; left: 90px; top: 10px;">
-                    <span>UG Anfield</span>
-                </a>
-                <a class="navbar-brand" href="index.html">UG Anfield</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
-                        <li class="nav-item"><a class="nav-link" href="news.html">News & Updates</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="media.html">Media</a></li>
-                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="matches.html">Matches</a></li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="index.html">UG Anfield</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News & Updates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="partnership.html">Partnership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="matches.html">Matches</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Welcome to UG Anfield Media</h1>
-        <p>Relive the best moments with the Ugandan Liverpool Supporters Club</p>
+    <section class="hero-section text-center py-5">
+        <div class="container">
+            <h1 class="display-5">Liverpool FC Matches</h1>
+            <p class="lead">Stay updated with all Liverpool FC's upcoming and past matches.</p>
+        </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Matches Section -->
     <div class="container my-5">
-        <h2 class="gallery-title text-center">Gallery</h2>
-        <p class="text-center">Explore our photos and match highlights!</p>
+        <h2 class="text-center mb-4">Upcoming & Past Matches</h2>
 
-        <!-- Filters -->
+        <!-- Filter Buttons -->
         <div class="text-center mb-4">
-            <button class="btn btn-danger btn-filter" data-filter="all">All</button>
-            <button class="btn btn-danger btn-filter" data-filter="photos">Photos</button>
-            <button class="btn btn-danger btn-filter" data-filter="highlights">Highlights</button>
+            <button class="btn btn-outline-danger btn-filter" data-filter="all">All</button>
+            <button class="btn btn-outline-danger btn-filter" data-filter="upcoming">Upcoming</button>
+            <button class="btn btn-outline-danger btn-filter" data-filter="completed">Completed</button>
         </div>
 
-        <!-- Media Grid -->
-        <div class="row g-4 media-grid" id="media-grid">
-            <!-- Photo Items -->
-            <div class="col-sm-6 col-md-4 media-item" data-category="photos">
-                <img src="images/photo1.jpg" class="img-fluid rounded" alt="Media Image 1">
-            </div>
-            <div class="col-sm-6 col-md-4 media-item" data-category="photos">
-                <img src="images/photo2.jpg" class="img-fluid rounded" alt="Media Image 2">
-            </div>
-            <div class="col-sm-6 col-md-4 media-item" data-category="photos">
-                <img src="images/photo3.jpg" class="img-fluid rounded" alt="Media Image 3">
+        <!-- Matches List -->
+        <div class="row g-4" id="matches-list">
+            <!-- Upcoming Match -->
+            <div class="col-sm-6 col-md-4 match-item" data-category="upcoming">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">Premier League</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Liverpool vs. Manchester United</h5>
+                        <p class="card-text">Date: 20th January 2025<br>Venue: Anfield</p>
+                        <a href="https://example.com/buy-tickets" target="_blank" class="btn btn-danger btn-sm">Buy Tickets</a>
+                        <a href="https://example.com/match-details" target="_blank" class="btn btn-outline-danger btn-sm">Match Details</a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Highlight Items -->
-            <div class="col-sm-6 col-md-4 media-item" data-category="highlights">
-                <img src="images/highlight1.jpg" class="img-fluid rounded" alt="Highlight 1">
-                <p class="mt-2 text-center">Liverpool vs. Man City</p>
+            <!-- Completed Match -->
+            <div class="col-sm-6 col-md-4 match-item" data-category="completed">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">Champions League</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Liverpool 2 - 1 Real Madrid</h5>
+                        <p class="card-text">Date: 10th December 2024<br>Venue: Santiago Bernabéu</p>
+                        <a href="https://example.com/match-highlights" target="_blank" class="btn btn-secondary btn-sm">Watch Highlights</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-md-4 media-item" data-category="highlights">
-                <img src="images/highlight2.jpg" class="img-fluid rounded" alt="Highlight 2">
-                <p class="mt-2 text-center">Liverpool vs. Chelsea</p>
+
+            <!-- Another Upcoming Match -->
+            <div class="col-sm-6 col-md-4 match-item" data-category="upcoming">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">FA Cup</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Liverpool vs. Chelsea</h5>
+                        <p class="card-text">Date: 25th January 2025<br>Venue: Stamford Bridge</p>
+                        <a href="https://example.com/buy-tickets" target="_blank" class="btn btn-danger btn-sm">Buy Tickets</a>
+                        <a href="https://example.com/match-details" target="_blank" class="btn btn-outline-danger btn-sm">Match Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Another Completed Match -->
+            <div class="col-sm-6 col-md-4 match-item" data-category="completed">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">Premier League</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Liverpool 3 - 0 Everton</h5>
+                        <p class="card-text">Date: 5th November 2024<br>Venue: Anfield</p>
+                        <a href="https://example.com/match-highlights" target="_blank" class="btn btn-secondary btn-sm">Watch Highlights</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center py-3">
         <div class="container">
-            <p>Contact us at: <a href="mailto:info@uganfield.com" class="text-white">info@uganfield.com</a> | Follow us on: 
-                <a href="#" class="text-white">TikTok</a>, 
-                <a href="#" class="text-white">Instagram</a>, 
-                <a href="#" class="text-white">Facebook</a>
+            <p>Contact us at: <a href="mailto:info@uganfield.com">info@uganfield.com</a> | Follow us on: 
+                <a href="#" target="_blank">TikTok</a>, 
+                <a href="#" target="_blank">Instagram</a>, 
+                <a href="#" target="_blank">Facebook</a>
             </p>
             <p>&copy; 2024 UG Anfield. All rights reserved.</p>
         </div>
@@ -146,7 +147,7 @@
         document.querySelectorAll('.btn-filter').forEach(button => {
             button.addEventListener('click', () => {
                 const filter = button.getAttribute('data-filter');
-                document.querySelectorAll('.media-item').forEach(item => {
+                document.querySelectorAll('.match-item').forEach(item => {
                     item.style.display = (filter === 'all' || item.getAttribute('data-category') === filter) ? 'block' : 'none';
                 });
             });
