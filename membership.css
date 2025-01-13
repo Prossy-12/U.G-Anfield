@@ -7,7 +7,7 @@ body::before {
     left: 50%;
     width: 100vw;
     height: 100vh;
-    background-image: url('../Images/wwliv.webp');
+    background-image: url('/Images/wwliv.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
